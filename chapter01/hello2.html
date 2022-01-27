@@ -13,10 +13,20 @@
 	<div class="content">
 		<div class="main">
 			<h1>Writing to the Document Window</h1>
-			
+			<script>
+				document.write('<p>Hello world!</p>'); // we usually use this to just put in code that would be needed like date (see footer for example)
+
+				function changeColor(){
+					document.body.style.backgroundColor = "red";
+				}
+			</script>
+			<button onclick= "changeColor()">
+				Click Me!
+			</button>
 		</div>
 	</div>
 	<footer>
+		<p><script>document.write(new Date().getFullYear())</script></p>
 		<p>JavaScript &amp; jQuery: The Missing Manual, 3rd Edition, by <a href="http://sawmac.com/">David McFarland</a>. Published by <a href="http://oreilly.com/">O'Reilly Media, Inc</a>.</p>
 	</footer>
 </div>
