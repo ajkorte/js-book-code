@@ -5,6 +5,9 @@
 <title>Using a Variable, Part II</title>
 <link href="../_css/site.css" rel="stylesheet">
 <script>
+  var name = prompt("What is your name?", "").trim(); //prompt asks the user for an imput, "" makes it an empty screen if they do not want to answer.
+
+  name = (name == null || name == "" ? "Guest" : name); //turnary conditional
 
 </script>
 </head>
@@ -17,7 +20,7 @@
     <div class="main">
       <h1>Using a Variable, Part II</h1>
       <script>
-		
+        document.write(`<p>Welcome ${name}!</p>`);
       </script>
     </div>
   </div>
